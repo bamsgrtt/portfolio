@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
-    <title>Bambang Sugiarto - Software Engineer</title>
+    <title>Bambang Sugiarto - Portfolio</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body>
     <!-- Header -->
@@ -22,11 +24,12 @@
               <li><a href="#portfolios">Portfolio</a></li>
               <li><a href="#skills">Skills</a></li>
               <li><a href="#contact">Contact</a></li>
-              <li>
+              <!-- <li> 
                 <a href="/resume.pdf" target="_blank">
                   <button class="btn">Resume</button>
                 </a>
               </li>
+              -->
             </ul>
           </nav>
 
@@ -39,15 +42,17 @@
 
         <section id="hero">
           <div class="hero-left">
-            <h3 class="pre-title">My name is</h3>
-            <h1 class="hero-name">Bambang <span>Sugiarto</span></h1>
-            <p>
-              Computer Science is the study of computational theory, programming, and system design. It focuses on developing efficient solutions through software and understanding how computer systems operate to solve real-world problems.
+            <h3 class="pre-title" data-aos="fade-up" data-aos-delay="200" class="aos-init aos-animate">My name is</h3>
+            <h1 class="hero-name" data-aos="fade-up" data-aos-delay="300" class="aos-init aos-animate">Bambang <span>Sugiarto</span></h1>
+            <p class="paragraph" data-aos="fade-up" data-aos-delay="400" class="aos-init aos-animate">
+              Hi, I'm Bambang Sugiarto. I'm a developer.
+I like coding and building cool stuff.
+Take a look at my work.
             </p>
           </div>
 
-          <div class="hero-right">
-            <img src="images/IMG_20240703_162404.jpg" alt="Person Standing" />
+          <div class="hero-right" data-aos="fade-up" data-aos-delay="200" data-aos-animate="aos-init aos-animate">
+            <img src="images/IMG_20250629_094112_645.webp" alt="Person Standing" />
           </div>
         </section>
       </div>
@@ -55,13 +60,13 @@
     <!-- End Header -->
 
     <!-- Services -->
-    <section id="services">
-      <div class="services main-container">
+    <section id="services" data-aos="fate-up">
+      <div class="services main-container" data-aos="fade-up">
         <h3 class="pre-title">Services</h3>
         <h1 class="section-title services-title">Specialized In</h1>
 
         <div class="grid-3">
-          <div class="service">
+          <div class="service" data-aos="fade-up" data-aos-delay="200" data-aos-animate="aos=init aos-animate">
             <div class="service-icon">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -81,7 +86,7 @@
             </p>
           </div>
 
-          <div class="service">
+          <div class="service" data-aos="fade-up" data-aos-delay="300" data-aos-animate="aos=init aos-animate">
             <div class="service-icon">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -101,7 +106,7 @@
             </p>
           </div>
 
-          <div class="service">
+          <div class="service" data-aos="fade-up" data-aos-delay="400" data-aos-animate="aos=init aos-animate">
             <div class="service-icon">
               <svg
                 width="24"
@@ -126,18 +131,18 @@
     </section>
     <!-- End Services -->
 
-    <!-- Portfolios 
+     
     <section id="portfolios">
       <div class="portfolios main-container">
-        <h3 class="pre-title">My Works</h3>
-        <h1 class="section-title">Featured Portfolios</h1>
+        <h3 class="pre-title" data-aos="fade-right" data-aos-delay="200" data-aos-animate="aos-init aos-animate">My Works</h3>
+        <h1 class="section-title" data-aos="fade-right" data-aos-delay="300" data-aos-animate="aos-init aos-animate">Featured Portfolios</h1>
 
         <div class="grid-3">
           
-          <div class="portfolio">
+          <div class="portfolio" data-aos="flip-left" data-aos-delay="400" data-aos-animate="aos-init aos-animate">
             <div class="portfolio-cover">
               <img
-                src="/images/portofolio/portfolio-1.png"
+                src="/images/portfolio-1.png"
                 alt="Portfolio 1"
               />
             </div>
@@ -170,10 +175,10 @@
           </div>
 
           
-          <div class="portfolio">
+          <div class="portfolio" data-aos="flip-left" data-aos-delay="500" data-aos-animate="aos-init aos-animate">
             <div class="portfolio-cover">
               <img
-                src="/images/portofolio/portfolio-2.png"
+                src="/images/portfolio-2.png"
                 alt="Portfolio 2"
               />
             </div>
@@ -204,12 +209,11 @@
               </p>
             </div>
           </div>
-
          
-          <div class="portfolio">
+          <div class="portfolio" data-aos="flip-left" data-aos-delay="600" data-aos-animate="aos-init aos-animate">
             <div class="portfolio-cover">
               <img
-                src="/images/portofolio/portfolio-3.jpeg"
+                src="/images/portfolio-3.jpeg"
                 alt="Portfolio 3"
               />
             </div>
@@ -243,13 +247,13 @@
         </div>
       </div>
     </section>>
-   End Portfolios -->
+   
 
     <!-- Skills & Education -->
-    <section id="skills">
-      <div class="skills main-container">
-        <h3 class="pre-title">Learning Path</h3>
-        <h1 class="section-title">Skills & Education</h1>
+    <section id="skills" data-aos="fade-up">
+      <div class="skills main-container" data-aos="fade-up">
+        <h3 class="pre-title" data-aos="fade-up" data-aos-delay="200">Learning Path</h3>
+        <h1 class="section-title" data-aos="fade-up" data-aos-delay="300">Skills & Education</h1>
 
         <div class="skills-grid">
           <div class="skills-left">
@@ -257,7 +261,7 @@
               <div class="line">
                 <div></div>
               </div>
-              <div class="education-info">
+              <div class="education-info" data-aos="fade-up" data-aos-delay="400">
                 <h4 class="education-title">SDN Lengkong 02</h4>
                 <p>Student - Elementary school</p>
                 <h4 class="education-years">2014 - 2019</h4>
@@ -267,7 +271,7 @@
               <div class="line">
                 <div></div>
               </div>
-              <div class="education-info">
+              <div class="education-info" data-aos="fade-up" data-aos-delay="500">
                 <h4 class="education-title">SMPN 01 Mumbulsari</h4>
                 <p>Student & Basic Programers - Junior High school</p>
                 <h4 class="education-years">2019 - 2022</h4>
@@ -277,7 +281,7 @@
               <div class="line">
                 <div></div>
               </div>
-              <div class="education-info">
+              <div class="education-info" data-aos="fade-up" data-aos-delay="600">
                 <h4 class="education-title">SMKN 02 Jember</h4>
                 <p>Intermediate Programers Developers - Software Engineering</p>
                 <h4 class="education-years">2022 - 2025</h4>
@@ -285,7 +289,7 @@
             </div>
           </div>
 
-          <div class="skills-right">
+          <div class="skills-right" data-aos="fade-up" data-aos-delay="200">
             <p>
               For 2+ years, I have been continuously learning in the field of
               front-end and experimenting with new technologies and frameworks,
@@ -293,7 +297,7 @@
               and experimenting with new technologies.
             </p>
 
-            <div class="skills-list">
+            <div class="skills-list" data-aos="fade-up" data-aos-delay="300">
               <ul>
                 <li>Java</li>
                 <li>Node JS</li>
@@ -317,7 +321,7 @@
     <!-- End Skills & Education  -->
 
     <!-- Contact -->
-    <section id="contact">
+    <section id="contact" data-aos="fade-up" data-aos-delay="200" data-aos-animate="aos-init aos-animate">
       <div class="contact main-container">
         <div class="contact-left">
           <form
@@ -469,5 +473,10 @@
     <!-- End Footer -->
 
     <script src="main.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+      });
+  </script>
   </body>
 </html>
