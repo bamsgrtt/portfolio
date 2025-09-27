@@ -1,0 +1,23 @@
+footer {
+    padding: 4rem 0;
+    background: var(--secondaryBackgroundColor);
+    text-align: center;
+  }
+  
+  .footer-icons {
+    margin-bottom: 1rem;
+  }
+  
+  .footer-icons a {
+    margin: 0 0.5rem;
+  }
+  
+  .footer-icons svg {
+    fill: #b0b8d1;
+    transition: fill 0.2s ease;
+  }
+  
+  .footer-icons a:hover svg {
+    fill: var(--primaryIconColor);
+  }
+  

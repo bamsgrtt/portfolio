@@ -1,0 +1,52 @@
+.services {
+    background-color: var(--secondaryBackgroundColor);
+    padding: var(--sectionPadding);
+  }
+  
+  .services .pre-title {
+    margin: 0 auto;
+  }
+  
+  .services-title {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  
+  .service {
+    padding: 3rem 2rem;
+    text-align: center;
+    background: var(--primaryBackgroundColor);
+    border-radius: var(--itemBorderRadius);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .service:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .service h4 {
+    margin: 1.5rem 0;
+    font-weight: 500;
+    font-size: 1.05rem;
+  }
+  
+  .service-icon {
+    background: var(--thirdBackgroundColor);
+    width: fit-content;
+    margin: 0 auto;
+    padding: 1rem 1.3rem;
+    border-radius: 0.5rem;
+  }
+  
+  .service-icon svg {
+    fill: var(--primaryIconColor);
+    width: 2rem;
+    height: 2rem;
+    transition: fill 0.2s ease;
+  }
+  
+  .service-icon svg:hover {
+    fill: var(--primaryIconColorHover);
+  }
+  

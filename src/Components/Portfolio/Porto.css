@@ -1,0 +1,72 @@
+.portfolios {
+    padding: var(--sectionPadding);
+  }
+  
+  .portfolio {
+    border-radius: var(--itemBorderRadius);
+    overflow: hidden;
+    border: 1px solid var(--borderColor);
+    background: var(--primaryBackgroundColor);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .portfolio:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .portfolio-cover {
+    height: 250px;
+    overflow: hidden;
+  }
+  
+  .portfolio-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .portfolio-cover img:hover {
+    transform: scale(1.05);
+  }
+  
+  .portfolio-info {
+    padding: 2rem 1.5rem;
+  }
+  
+  .portfolio-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .portfolio h4 {
+    font-weight: 500;
+    font-size: 1.05rem;
+  }
+  
+  .portfolio-title a svg {
+    transition: 0.2s ease-in-out;
+  }
+  
+  .portfolio-title a svg:hover {
+    fill: var(--primaryIconColor);
+  }
+  
+  .portfolio-tags {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+    flex-wrap: wrap;
+  }
+  
+  .portfolio-tags div {
+    font-size: 0.9rem;
+    border: 1px solid var(--borderColor);
+    padding: 0.4rem 1rem;
+    color: var(--secondaryTextColor);
+    border-radius: 0.5rem;
+  }
+  

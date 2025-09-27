@@ -1,0 +1,44 @@
+.hero {
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 20px;
+}
+
+.hero-name {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0.5rem 0 1rem;
+}
+
+.hero-name span {
+  color: var(--primaryIconColor); /* warna biru (#4ea8de) */
+  transition: color 0.3s ease;    /* animasi perubahan warna smooth */
+}
+
+.hero-right {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-right img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+/* Mode PC (lebar > 1200px): gambar jadi lebih besar */
+@media screen and (min-width: 1200px) {
+  .hero-right img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+  }
+
+  .hero {
+    height: 720px;
+  }
+}
