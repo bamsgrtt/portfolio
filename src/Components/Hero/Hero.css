@@ -42,3 +42,16 @@
     height: 720px;
   }
 }
+
+
+@media  screen and (max-width: 825px) {
+  .hero {
+    padding-top: 80px;
+  }
+}
+
+@media  screen and (max-width: 640px) {
+  .hero {
+    padding-top: 90px;
+  }
+}
