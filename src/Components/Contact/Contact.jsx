@@ -1,9 +1,15 @@
 import React from 'react'
 import './Contact.css'
 import '../../App.css'
+import { Element } from 'react-scroll'
 const Contact = () => {
   return (
-    <div className='contact' data-aos="fade-up" data-aos-delay="200" data-aos-animate="aos-init aos-animate">
+    <Element
+    name="contact"
+    className='contact'
+    data-aos="fade-up" 
+    data-aos-delay="200" 
+    data-aos-animate="aos-init aos-animate">
       <div className="contact main-container">
         <div className="contact-left">
           <form
@@ -91,7 +97,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </div>
+    </Element>
   )
 }
 

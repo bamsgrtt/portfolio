@@ -1,57 +1,71 @@
-import React from 'react'
-import './Navbar.css'
-import '../../assets/main'
-import '../../App.css'
-import { useState, useEffect } from 'react'
+import React, { useState, useEffect } from "react";
+import { Link } from "react-scroll";
+import "./Navbar.css";
 
 const Navbar = () => {
   const [navActive, setNavActive] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
-  const handleBurgerClick = () => {
-    setNavActive(!navActive);
-  };
-
-  const closeMenu = () => {
-    setNavActive(false);
-  };
+  const toggleMenu = () => setNavActive(!navActive);
+  const closeMenu = () => setNavActive(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      const isScrolled = window.scrollY > 50;
-      setScrolled(isScrolled);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    const handleScroll = () => setScrolled(window.scrollY > 50);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
-    <header className={`navbar-header ${scrolled ? 'scrolled' : ''}`}>
+    <header className={`navbar-header ${scrolled ? "scrolled" : ""}`}>
       <div className="main-container">
         <div className="nav">
+          {/* Logo */}
           <div className="logo">
-            <a href="/" onClick={closeMenu}>BS</a>
+            <Link
+              to="hero"
+              smooth={true}
+              duration={500}
+              offset={-70}
+              onClick={closeMenu}
+            >
+              BS
+            </Link>
           </div>
 
-          <nav className={navActive ? "nav-active" : ""}>
-            <ul>
-              <li><a href="#services" onClick={closeMenu}>Services</a></li>
-              <li><a href="#portfolios" onClick={closeMenu}>Portfolio</a></li>
-              <li><a href="#skills" onClick={closeMenu}>Skills</a></li>
-              <li><a href="#contact" onClick={closeMenu}>Contact</a></li>
-            </ul>
-          </nav>
+          {/* Menu */}
+          <ul className={navActive ? "nav-links nav-active" : "nav-links"}>
+            <li>
+              <Link to="services" smooth={true} duration={100} offset={-70} onClick={closeMenu}>
+                Services
+              </Link>
+            </li>
+            <li>
+              <Link to="portfolios" smooth={true} duration={100} offset={-70} onClick={closeMenu}>
+                Portfolio
+              </Link>
+            </li>
+            <li>
+              <Link to="skills" smooth={true} duration={100} offset={-70} onClick={closeMenu}>
+                Skills
+              </Link>
+            </li>
+            <li>
+              <Link to="contact" smooth={true} duration={100} offset={-70} onClick={closeMenu}>
+                Contact
+              </Link>
+            </li>
+          </ul>
 
-          <div className={`burger ${navActive ? "toggle-burger" : ""}`} onClick={handleBurgerClick}>
-            <div className="line-1"></div>
-            <div className="line-2"></div>
-            <div className="line-3"></div>
+          {/* Hamburger */}
+          <div className={`burger ${navActive ? "toggle-burger" : ""}`} onClick={toggleMenu}>
+            <div></div>
+            <div></div>
+            <div></div>
           </div>
         </div>
       </div>
     </header>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
