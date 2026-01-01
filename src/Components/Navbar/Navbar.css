@@ -39,6 +39,7 @@
   display: flex;
   gap: 3rem;
   list-style: none;
+  cursor: pointer;
 }
 .nav-links li a {
   color: #fff;
