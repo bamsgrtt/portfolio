@@ -1,52 +1,83 @@
 .services {
-    background-color: var(--secondaryBackgroundColor);
-    padding: var(--sectionPadding);
+  padding: var(--sectionPadding);
+}
+
+.services .pre-title {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.services-title {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+/* Container Grid - Menggunakan Flex agar mirip dengan list Skill */
+.services-list-grid {
+  display: flex;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Card Service Gaya Pill (SAMA DENGAN SKILL) */
+.service-item-card {
+  background: var(--thirdBackgroundColor);
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 50px; /* Bentuk Kapsul */
+  border: 1px solid var(--primaryIconColor); /* Menggunakan variabel border yang sama */
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: default;
+  min-width: 180px;
+}
+
+.service-item-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.1);
+  border-color: var(--primaryIconColor);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling Box Icon di dalam Service */
+.service-icon-box {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  transition: all 0.3s ease;
+}
+
+.service-item-card h4 {
+  margin: 0;
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: var(--textColor);
+  white-space: nowrap;
+}
+
+/* Warna Icon Khusus Service (Bisa kamu sesuaikan) */
+.uiux { color: #f24e1e; }
+.app { color: #61dafb; }
+.web { color: #f7df1e; }
+.backend { color: #339933; }
+.frontend { color: #3178c6; }
+.db { color: #4479a1; }
+.api { color: #e10098; }
+.mobile { color: #02569b; }
+.cloud { color: #ff9900; }
+.seo { color: #42b883; }
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .services-list-grid {
+    justify-content: flex-start;
   }
-  
-  .services .pre-title {
-    margin: 0 auto;
+  .service-item-card {
+    width: 100%; /* Full width di mobile agar mudah dibaca */
   }
-  
-  .services-title {
-    text-align: center;
-    margin-bottom: 4rem;
-  }
-  
-  .service {
-    padding: 3rem 2rem;
-    text-align: center;
-    background: var(--primaryBackgroundColor);
-    border-radius: var(--itemBorderRadius);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .service:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  }
-  
-  .service h4 {
-    margin: 1.5rem 0;
-    font-weight: 500;
-    font-size: 1.05rem;
-  }
-  
-  .service-icon {
-    background: var(--thirdBackgroundColor);
-    width: fit-content;
-    margin: 0 auto;
-    padding: 1rem 1.3rem;
-    border-radius: 0.5rem;
-  }
-  
-  .service-icon svg {
-    fill: var(--primaryIconColor);
-    width: 2rem;
-    height: 2rem;
-    transition: fill 0.2s ease;
-  }
-  
-  .service-icon svg:hover {
-    fill: var(--primaryIconColorHover);
-  }
-  
+}

@@ -1,65 +1,60 @@
 /* Navbar umum */
 .navbar-header {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
   z-index: 1000;
-  background: transparent;
-  transition: all 0.3s ease-in-out;
-  padding: 0;
-}
-
-.navbar-header.scrolled {
-  background: var(--primaryBackgroundColor);
-  box-shadow: 0 2px 20px rgba(0,0,0,0.3);
-  border-bottom: 1px solid var(--borderColor);
+  margin: 0 60px;
 }
 
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 2rem;
-  position: relative;
+  padding: 20px ;
+  position: fixed;
+  gap: 10px;
+
 }
 
 /* Logo */
 .logo a {
-  color: #fff;
+  color: #000000;
+  font-family: "Bricolage Grotesque", sans-serif;
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-decoration: none;
   transition: color 0.2s;
 }
-.logo a:hover { color: var(--primaryIconColor); }
+
+.logo a span {
+  color: var(--primaryIconColor); 
+}
 
 /* Menu desktop */
 .nav-links {
   display: flex;
-  gap: 3rem;
+  gap: 1rem;
   list-style: none;
   cursor: pointer;
+ 
 }
 .nav-links li a {
-  color: #fff;
-  font-weight: 500;
-  text-decoration: none;
+  color: #000000;
+  font-weight: 400;
+  font-size: 14px;
   position: relative;
-  padding: 0.5rem 0;
+  padding: 0.4rem 1rem;
   transition: color 0.2s;
+   border: 2px solid var(--primaryIconColor);
+   border-radius: 25px;
+  background: #fff;
+  transition: all 0.3s ease-in-out;
 }
-.nav-links li a::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0%;
-  height: 2px;
+
+.nav-links li a:hover {
   background: var(--primaryIconColor);
-  transition: width 0.3s;
+  color: #fff;
 }
-.nav-links li a:hover::after { width: 100%; }
+
 
 /* Hamburger */
 .burger {

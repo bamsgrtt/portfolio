@@ -7,13 +7,13 @@ import '../../App.css'
 const Porto = () => {
   return (
     <div className='portfolios'>
-      <div className="portfolios main-container">
-        <h3 className="pre-title" data-aos="fade-right" data-aos-delay="200" data-aos-animate="aos-init aos-animate">My Works</h3>
-        <h1 className="section-title" data-aos="fade-right" data-aos-delay="300" data-aos-animate="aos-init aos-animate">Featured Portfolios</h1>
+      <div className="main-container">
+        <h3 className="pre-title" data-aos="fade-up" data-aos-delay="200" data-aos-animate="aos-init aos-animate">My Works</h3>
+        <h1 className="section-title" data-aos="fade-up" data-aos-delay="300" data-aos-animate="aos-init aos-animate">Featured Portfolios</h1>
 
-        <div className="grid-3">
+        <div className="grid-3" data-aos="fate-up">
           
-          <div className="portfolio" data-aos="flip-left" data-aos-delay="400" data-aos-animate="aos-init aos-animate">
+          <div className="portfolio" data-aos="fade-up" data-aos-delay="400" data-aos-animate="aos-init aos-animate">
             <div className="portfolio-cover">
               <img src={Port1} alt="Portfolio 1"/>
             </div>
@@ -37,16 +37,11 @@ const Porto = () => {
                 <div>React</div>
                 <div>Tailwind</div>
               </div>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia
-                eligendi cupiditate asperiores nam, beatae repudiandae expedita
-                fugit, quos dicta ut unde rerum vero repellat vitae.
-              </p>
             </div>
           </div>
 
           
-          <div className="portfolio" data-aos="flip-left" data-aos-delay="500" data-aos-animate="aos-init aos-animate">
+          <div className="portfolio" data-aos="fade-down" data-aos-delay="600" data-aos-animate="aos-init aos-animate">
             <div className="portfolio-cover">
               <img src={Port2} alt="Portfolio 2"/>
             </div>
@@ -70,16 +65,10 @@ const Porto = () => {
                 <div>Vue</div>
                 <div>Contentful</div>
               </div>
-               
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia
-                eligendi cupiditate asperiores nam, beatae repudiandae expedita
-                fugit, quos dicta ut unde rerum vero repellat vitae.
-              </p>
             </div>
           </div>
          
-          <div className="portfolio" data-aos="flip-left" data-aos-delay="600" data-aos-animate="aos-init aos-animate">
+          <div className="portfolio" data-aos="fade-up" data-aos-delay="800" data-aos-animate="aos-init aos-animate">
             <div className="portfolio-cover">
               <img src={Port3} alt="Portfolio 3"/>
             </div>
@@ -103,11 +92,6 @@ const Porto = () => {
                 <div>React</div>
                 <div>Materialize</div>
               </div> 
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia
-                eligendi cupiditate asperiores nam, beatae repudiandae expedita
-                fugit, quos dicta ut unde rerum vero repellat vitae.
-              </p>
             </div>
           </div>
         </div>

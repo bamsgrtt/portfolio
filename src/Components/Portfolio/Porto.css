@@ -8,12 +8,24 @@
     border: 1px solid var(--borderColor);
     background: var(--primaryBackgroundColor);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 300px;
+    height: 350px;
+    justify-content: center;
+    align-items: center;
   }
   
   .portfolio:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   }
+
+.section-title {
+  text-align: center;
+}
+
+.portfolios .pre-title{
+  margin: 0 auto;
+}
   
   .portfolio-cover {
     height: 250px;
@@ -32,7 +44,7 @@
   }
   
   .portfolio-info {
-    padding: 2rem 1.5rem;
+    padding: 1rem 1.5rem;
   }
   
   .portfolio-title {
@@ -44,7 +56,7 @@
   
   .portfolio h4 {
     font-weight: 500;
-    font-size: 1.05rem;
+    font-size: 1rem;
   }
   
   .portfolio-title a svg {
@@ -58,14 +70,14 @@
   .portfolio-tags {
     display: flex;
     gap: 1rem;
-    margin: 1rem 0;
+    margin: 0.5rem 0;
     flex-wrap: wrap;
   }
   
   .portfolio-tags div {
     font-size: 0.9rem;
     border: 1px solid var(--borderColor);
-    padding: 0.4rem 1rem;
+    padding: 0.4rem 0.8rem;
     color: var(--secondaryTextColor);
     border-radius: 0.5rem;
   }

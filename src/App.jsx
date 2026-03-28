@@ -12,7 +12,7 @@ function App() {
       <Navbar/>
       <Hero/>
       <Services/>
-      <Porto/>
+      {/* <Porto/> */}
       <Skill/>
       <Contact/>
       <Footer/>

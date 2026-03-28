@@ -1,77 +1,90 @@
 .contact {
-    padding: var(--sectionPadding);
-  }
-  
-.contact {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 3rem;
+  padding: var(--sectionPadding);
 }
-  
-  /* Form */
-.contact-form div {
-    margin-bottom: 1.4rem;
+
+.contact-title {
+  text-align: center;
+  margin-bottom: 3rem;
 }
-  
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 0.75rem 1.3rem;
-  font-family: "Roboto", sans-serif;
-  background: var(--secondaryBackgroundColor);
-  border: 1px solid var(--borderColor);
-  border-radius: 3px;
-  resize: none;
+
+.contact .pre-title{
+  margin: 0 auto;
 }
-  
-.contact-form input::placeholder,
-.contact-form textarea::placeholder {  
-  color: #9d9fa1;
-}
-  
-.contact-form input:focus,
-.contact-form textarea:focus {
-  outline: none;
-  border: 1px solid #7d7d7d;
-}
-  
-.btn-submit {
-  width: 100%;
-  padding: 0.75rem 1.3rem;
-  background-color: var(--primaryIconColor);
-  color: #fff;
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
-  transition: 0.2s ease-in-out;
-}
-  
-.btn-submit:hover {
-  background-color: var(--primaryIconColorHover);
-}
-  
-  /* Contact item (info) */
-.contact-item {
-  display: flex;
-  gap: 1.5rem;
-  margin-bottom: 2.5rem;
-}
-  
-.contact-item-icon {
+
+/* Kotak Besar Pembungkus Utama */
+.contact-box-wrapper {
   background: var(--thirdBackgroundColor);
-  width: 53px;
-  height: 53px;
-  border-radius: 9px;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1rem;
+  border-radius: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* List ke Bawah */
+.contact-list-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Item List Baris */
+.contact-list-item {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 0.6rem;
+  border-radius: 15px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 2px solid #000;
+}
+
+/* Hover Effect pada per baris */
+.contact-list-item:hover {
+  background: rgba(255, 255, 255, 0.05);
+  transform: translateX(10px); /* Geser sedikit ke kanan saat di-hover */
+}
+
+/* Garis pembatas antar item (kecuali yang terakhir) */
+.contact-list-item:not(:last-child) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.contact-icon-box {
+  width: 45px;
+  height: 45px;
+  background: var(--secondaryBackgroundColor);
+  border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 1.5rem;
 }
-  
-.contact-item-icon svg {
-  fill: var(--primaryIconColor);
+
+.contact-text h4 {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--primaryColor);
+  font-weight: 600;
 }
-  
-.contact-item-detail h4 {
-  margin-bottom: 0.6rem;
+
+.contact-text p {
+  font-size: 0.85rem;
+  color: var(--textColor);
+  opacity: 0.7;
 }
-  
+
+/* Warna Brand */
+.instagram { color: #E4405F; }
+.whatsapp { color: #25D366; }
+.email { color: #EA4335; }
+.github { color: #000000; }
+
+/* Responsive */
+@media (max-width: 600px) {
+  .contact-box-wrapper {
+    margin: 0 1rem;
+  }
+}

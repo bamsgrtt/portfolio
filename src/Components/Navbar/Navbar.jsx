@@ -28,36 +28,63 @@ const Navbar = () => {
               offset={-70}
               onClick={closeMenu}
             >
-              BS
+              BAMS <span>永恒</span>
             </Link>
           </div>
 
           {/* Menu */}
           <ul className={navActive ? "nav-links nav-active" : "nav-links"}>
             <li>
-              <Link to="services" smooth={true} duration={100} offset={-70} onClick={closeMenu}>
+              <Link
+                to="services"
+                smooth={true}
+                duration={100}
+                offset={-70}
+                onClick={closeMenu}
+              >
                 Services
               </Link>
             </li>
             <li>
-              <Link to="portfolios" smooth={true} duration={100} offset={-70} onClick={closeMenu}>
+              <Link
+                to="portfolios"
+                smooth={true}
+                duration={100}
+                offset={-70}
+                onClick={closeMenu}
+              >
                 Portfolio
               </Link>
             </li>
             <li>
-              <Link to="skills" smooth={true} duration={100} offset={-70} onClick={closeMenu}>
+              <Link
+                to="skills"
+                smooth={true}
+                duration={100}
+                offset={-70}
+                onClick={closeMenu}
+              >
                 Skills
               </Link>
             </li>
             <li>
-              <Link to="contact" smooth={true} duration={100} offset={-70} onClick={closeMenu}>
+              <Link
+                to="contact"
+                smooth={true}
+                duration={100}
+                offset={-70}
+                onClick={closeMenu}
+              >
                 Contact
               </Link>
             </li>
           </ul>
 
           {/* Hamburger */}
-          <div className={`burger ${navActive ? "toggle-burger" : ""}`} onClick={toggleMenu}>
+          <div
+            className={`burger ${navActive ? "toggle-burger" : ""}`}
+            onClick={toggleMenu}
+          >
             <div></div>
             <div></div>
             <div></div>
