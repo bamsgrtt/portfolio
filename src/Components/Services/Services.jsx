@@ -34,17 +34,17 @@ const Services = () => {
 
           <div className="service-item-card" data-aos="fade-up" data-aos-delay="500">
             <div className="service-icon-box backend"><FaServer /></div>
-            <h4>Backend Dev</h4>
+            <h4>Backend</h4>
           </div>
 
           <div className="service-item-card" data-aos="fade-up" data-aos-delay="600">
             <div className="service-icon-box frontend"><HiOutlineTerminal /></div>
-            <h4>Frontend Dev</h4>
+            <h4>Frontend</h4>
           </div>
 
           <div className="service-item-card" data-aos="fade-up" data-aos-delay="700">
             <div className="service-icon-box db"><FaDatabase /></div>
-            <h4>Database Mgmt</h4>
+            <h4>Database</h4>
           </div>
 
           <div className="service-item-card" data-aos="fade-up" data-aos-delay="800">
