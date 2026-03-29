@@ -28,7 +28,7 @@ const Navbar = () => {
               offset={-70}
               onClick={closeMenu}
             >
-              BAMS <span>永恒</span>
+              BAMS<span>永恒</span>
             </Link>
           </div>
 

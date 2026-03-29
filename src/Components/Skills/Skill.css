@@ -33,7 +33,7 @@
   content: "";
   flex: 1;
   height: 1px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.3);
 }
 
 .cat-icon {
@@ -50,8 +50,10 @@
 
 /* Card Skill Gaya Pill */
 .skill-item-card {
-  background: var(--thirdBackgroundColor);
-  padding: 12px 24px;
+  background: rgba(255, 255, 255, 0.5); 
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 10px 18px;
   display: flex;
   align-items: center;
   gap: 0.6rem;
@@ -62,8 +64,8 @@
 }
 
 .skill-item-card:hover {
-  transform: translateY(-5px);
-  background: rgba(255, 255, 255, 0.1);
+  transform: scale(1.05);
+  background: rgba(255, 255, 255, 0.7);
   border-color: var(--primaryIconColor);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }

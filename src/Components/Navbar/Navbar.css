@@ -17,12 +17,13 @@
 
 /* Logo */
 .logo a {
-  color: #000000;
-  font-family: "Bricolage Grotesque", sans-serif;
+  color: #1a1a1a;
+  font-family: "Rakkas", serif;
   font-weight: 700;
   font-size: 1.5rem;
   text-decoration: none;
   transition: color 0.2s;
+  cursor: pointer;
 }
 
 .logo a span {
