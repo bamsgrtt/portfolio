@@ -53,34 +53,34 @@ const Skill = () => {
               <FaPalette className="cat-icon" /> Design & UI/UX
             </h4>
             <div className="skills-list-grid">
-              <div className="skill-item-card"><div className="skill-icon-box figma"><SiFigma /></div><h4>Figma</h4></div>
-              <div className="skill-item-card"><div className="skill-icon-box canva"><SiCanva /></div><h4>Canva</h4></div>
-              <div className="skill-item-card"><div className="skill-icon-box blender"><SiBlender /></div><h4>Blender 3D</h4></div>
+              <div className="skill-item-card" data-aos="fade-up" data-aos-delay="0"><div className="skill-icon-box figma"><SiFigma /></div><h4>Figma</h4></div>
+              <div className="skill-item-card" data-aos="fade-up" data-aos-delay="100"><div className="skill-icon-box canva"><SiCanva /></div><h4>Canva</h4></div>
+              <div className="skill-item-card" data-aos="fade-up" data-aos-delay="200"><div className="skill-icon-box blender"><SiBlender /></div><h4>Blender 3D</h4></div>
             </div>
           </div>
 
           {/* --- CATEGORY 2: PROGRAMMING & FRAMEWORKS --- */}
-          <div className="skill-category-group">
+          <div className="skill-category-group" data-aos="fade-up">
             <h4 className="category-label">
               <FaCode className="cat-icon" /> Programming & Frameworks
             </h4>
             <div className="skills-list-grid">
-              <div className="skill-item-card"><div className="skill-icon-box js"><SiJavascript /></div><h4>JavaScript</h4></div>
-              <div className="skill-item-card"><div className="skill-icon-box ts"><SiTypescript /></div><h4>TypeScript</h4></div>
-              <div className="skill-item-card"><div className="skill-icon-box java"><DiJava /></div><h4>Java</h4></div>
-              <div className="skill-item-card"><div className="skill-icon-box php"><SiPhp /></div><h4>PHP</h4></div>
-              <div className="skill-item-card"><div className="skill-icon-box python"><DiPython /></div><h4>Python</h4></div>
-              <div className="skill-item-card"><div className="skill-icon-box cpp"><SiCplusplus /></div><h4>C++</h4></div>
-              <div className="skill-item-card"><div className="skill-icon-box dart"><SiDart /></div><h4>Dart</h4></div>
-              <div className="skill-item-card"><div className="skill-icon-box go"><SiGo /></div><h4>Go Lang</h4></div>
+              <div className="skill-item-card" data-aos="fade-up" data-aos-delay="0"><div className="skill-icon-box js"><SiJavascript /></div><h4>JavaScript</h4></div>
+              <div className="skill-item-card" data-aos="fade-up" data-aos-delay="100"><div className="skill-icon-box ts"><SiTypescript /></div><h4>TypeScript</h4></div>
+              <div className="skill-item-card" data-aos="fade-up" data-aos-delay="200"><div className="skill-icon-box java"><DiJava /></div><h4>Java</h4></div>
+              <div className="skill-item-card" data-aos="fade-up" data-aos-delay="300"><div className="skill-icon-box php"><SiPhp /></div><h4>PHP</h4></div>
+              <div className="skill-item-card" data-aos="fade-up" data-aos-delay="400"><div className="skill-icon-box python"><DiPython /></div><h4>Python</h4></div>
+              <div className="skill-item-card" data-aos="fade-up" data-aos-delay="500"><div className="skill-icon-box cpp"><SiCplusplus /></div><h4>C++</h4></div>
+              <div className="skill-item-card" data-aos="fade-up" data-aos-delay="600"><div className="skill-icon-box dart"><SiDart /></div><h4>Dart</h4></div>
+              <div className="skill-item-card" data-aos="fade-up" data-aos-delay="700"><div className="skill-icon-box go"><SiGo /></div><h4>Go Lang</h4></div>
               
-              <div className="skill-item-card"><div className="skill-icon-box react"><SiReact /></div><h4>React JS</h4></div>
-              <div className="skill-item-card"><div className="skill-icon-box next"><SiNextdotjs /></div><h4>Next JS</h4></div>
-              <div className="skill-item-card"><div className="skill-icon-box vue"><SiVuedotjs /></div><h4>Vue JS</h4></div>
-              <div className="skill-item-card"><div className="skill-icon-box laravel"><SiLaravel /></div><h4>Laravel</h4></div>
-              <div className="skill-item-card"><div className="skill-icon-box flutter"><SiFlutter /></div><h4>Flutter</h4></div>
-              <div className="skill-item-card"><div className="skill-icon-box tailwind"><SiTailwindcss /></div><h4>Tailwind</h4></div>
-              <div className="skill-item-card"><div className="skill-icon-box bootstrap"><SiBootstrap /></div><h4>Bootstrap</h4></div>
+              <div className="skill-item-card" data-aos="fade-up" data-aos-delay="800"><div className="skill-icon-box react"><SiReact /></div><h4>React JS</h4></div>
+              <div className="skill-item-card" data-aos="fade-up" data-aos-delay="900"><div className="skill-icon-box next"><SiNextdotjs /></div><h4>Next JS</h4></div>
+              <div className="skill-item-card" data-aos="fade-up" data-aos-delay="1000"><div className="skill-icon-box vue"><SiVuedotjs /></div><h4>Vue JS</h4></div>
+              <div className="skill-item-card" data-aos="fade-up" data-aos-delay="1100"><div className="skill-icon-box laravel"><SiLaravel /></div><h4>Laravel</h4></div>
+              <div className="skill-item-card" data-aos="fade-up" data-aos-delay="1200"><div className="skill-icon-box flutter"><SiFlutter /></div><h4>Flutter</h4></div>
+              <div className="skill-item-card" data-aos="fade-up" data-aos-delay="1300"><div className="skill-icon-box tailwind"><SiTailwindcss /></div><h4>Tailwind</h4></div>
+              <div className="skill-item-card" data-aos="fade-up" data-aos-delay="1400"><div className="skill-icon-box bootstrap"><SiBootstrap /></div><h4>Bootstrap</h4></div>
             </div>
           </div>
 
@@ -90,15 +90,15 @@ const Skill = () => {
               <FaServer className="cat-icon" /> Backend, Cloud & Tools
             </h4>
             <div className="skills-list-grid">
-              <div className="skill-item-card"><div className="skill-icon-box node"><DiNodejsSmall /></div><h4>Node JS</h4></div>
-              <div className="skill-item-card"><div className="skill-icon-box mysql"><SiMysql /></div><h4>MySQL</h4></div>
-              <div className="skill-item-card"><div className="skill-icon-box pg"><SiPostgresql /></div><h4>PostgreSQL</h4></div>
-              <div className="skill-item-card"><div className="skill-icon-box mongo"><DiMongodb /></div><h4>MongoDB</h4></div>
-              <div className="skill-item-card"><div className="skill-icon-box firebase"><SiFirebase /></div><h4>Firebase</h4></div>
-              <div className="skill-item-card"><div className="skill-icon-box docker"><DiDocker /></div><h4>Docker</h4></div>
-              <div className="skill-item-card"><div className="skill-icon-box git"><DiGit /></div><h4>Git & GitHub</h4></div>
-              <div className="skill-item-card"><div className="skill-icon-box postman"><SiPostman /></div><h4>Postman</h4></div>
-              <div className="skill-item-card"><div className="skill-icon-box openai"><SiOpenai /></div><h4>AI Integration</h4></div>
+              <div className="skill-item-card" data-aos="fade-up" data-aos-delay="0"><div className="skill-icon-box node"><DiNodejsSmall /></div><h4>Node JS</h4></div>
+              <div className="skill-item-card" data-aos="fade-up" data-aos-delay="100"><div className="skill-icon-box mysql"><SiMysql /></div><h4>MySQL</h4></div>
+              <div className="skill-item-card" data-aos="fade-up" data-aos-delay="200"><div className="skill-icon-box pg"><SiPostgresql /></div><h4>PostgreSQL</h4></div>
+              <div className="skill-item-card" data-aos="fade-up" data-aos-delay="300"><div className="skill-icon-box mongo"><DiMongodb /></div><h4>MongoDB</h4></div>
+              <div className="skill-item-card" data-aos="fade-up" data-aos-delay="400"><div className="skill-icon-box firebase"><SiFirebase /></div><h4>Firebase</h4></div>
+              <div className="skill-item-card" data-aos="fade-up" data-aos-delay="500"><div className="skill-icon-box docker"><DiDocker /></div><h4>Docker</h4></div>
+              <div className="skill-item-card" data-aos="fade-up" data-aos-delay="600"><div className="skill-icon-box git"><DiGit /></div><h4>Git & GitHub</h4></div>
+              <div className="skill-item-card" data-aos="fade-up" data-aos-delay="700"><div className="skill-icon-box postman"><SiPostman /></div><h4>Postman</h4></div>
+              <div className="skill-item-card" data-aos="fade-up" data-aos-delay="800"><div className="skill-icon-box openai"><SiOpenai /></div><h4>AI Integration</h4></div>
             </div>
           </div>
 
