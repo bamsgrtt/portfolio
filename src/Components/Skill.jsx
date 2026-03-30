@@ -1,6 +1,6 @@
 import React from 'react';
-import './Skill.css';
-import '../../App.css';
+// import './Skill.css';
+import '../App.css';
 
 // Import Icons
 import { 

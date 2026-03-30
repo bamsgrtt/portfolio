@@ -1,9 +1,9 @@
 import React from 'react'
-import './Porto.css'
-import Port1 from '../../assets/images/port1.avif'
-import Port2 from '../../assets/images/port2.avif'
-import Port3 from '../../assets/images/port3.avif'
-import '../../App.css'
+// import './Porto.css'
+import Port1 from '../assets/images/port1.avif'
+import Port2 from '../assets/images/port2.avif'
+import Port3 from '../assets/images/port3.avif'
+import '../App.css'
 const Porto = () => {
   return (
     <div className='portfolios'>

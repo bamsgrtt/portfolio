@@ -1,6 +1,5 @@
 import React from "react";
-import "./Contact.css";
-import "../../App.css";
+import "../App.css";
 
 // Import Icons
 import { FaInstagramSquare, FaWhatsapp, FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';

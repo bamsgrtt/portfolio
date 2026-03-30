@@ -1,10 +1,10 @@
-import Hero from './Components/Hero/Hero'
-import Navbar from './Components/Navbar/Navbar'
-import Services from './Components/Services/Services'
-import Porto from './Components/Portfolio/Porto'
-import Skill from './Components/Skills/Skill'
-import Contact from './Components/Contact/Contact'
-import Footer from './Components/Footer/Footer'
+import Hero from './Components/Hero'
+import Navbar from './Components/Navbar'
+import Services from './Components/Services'
+import Porto from './Components/Porto'
+import Skill from './Components/Skill'
+import Contact from './Components/Contact'
+import Footer from './Components/Footer'
 
 function App() {
   return (
