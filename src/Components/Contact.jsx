@@ -7,10 +7,11 @@ import { SiTelegram } from 'react-icons/si';
 
 const Contact = () => {
   return (
-    <div className="contact" id="contact" data-aos="fade-up">
-      <div className="main-container">
-        <h3 className="pre-title">Contact</h3>
-        <h1 className="section-title contact-title">Connect with me</h1>
+    <div className="py-20 px-20 bg-white" id="contact" data-aos="fade-up">
+      <div className="container mx-auto">
+        <div className="text-center mb-16"></div>
+        <h3 className="text-sm font-bold text-blue-600 uppercase tracking-widest mb-2">Contact</h3>
+        <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900">Connect with me</h1>
 
         {/* Kotak Besar Pembungkus */}
         <div className="contact-box-wrapper" data-aos="zoom-in">

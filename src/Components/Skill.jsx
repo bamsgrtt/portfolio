@@ -1,111 +1,122 @@
-import React from 'react';
-// import './Skill.css';
-import '../App.css';
-
-// Import Icons
+import React from "react";
 import { 
-  DiJava, 
-  DiNodejsSmall, 
-  DiMongodb, 
-  DiGit, 
-  DiPython, 
-  DiDocker 
-} from 'react-icons/di';
-
+  DiJava, DiNodejsSmall, DiMongodb, DiGit, DiPython, DiDocker 
+} from "react-icons/di";
 import { 
-  SiTypescript, 
-  SiNextdotjs, 
-  SiVuedotjs,  
-  SiJavascript, 
-  SiTailwindcss, 
-  SiBootstrap, 
-  SiReact, 
-  SiFirebase, 
-  SiPostman, 
-  SiFlutter, 
-  SiFigma, 
-  SiBlender, 
-  SiCplusplus, 
-  SiMysql, 
-  SiPostgresql, 
-  SiLaravel, 
-  SiGo, 
-  SiDart, 
-  SiCanva, 
-  SiOpenai,
-  SiPhp 
-} from 'react-icons/si';
-
-import { FaPalette, FaCode, FaServer } from 'react-icons/fa';
+  SiTypescript, SiNextdotjs, SiVuedotjs, SiJavascript, SiTailwindcss, SiBootstrap, 
+  SiReact, SiFirebase, SiPostman, SiFlutter, SiFigma, SiBlender, SiCplusplus, 
+  SiMysql, SiPostgresql, SiLaravel, SiGo, SiDart, SiCanva, SiOpenai, SiPhp 
+} from "react-icons/si";
+import { FaPalette, FaCode, FaServer, FaTools, FaMobileAlt } from "react-icons/fa";
 
 const Skill = () => {
+  // Data Skill dikelompokkan berdasarkan kategori
+  const skillData = [
+    {
+      category: "Design & UI/UX",
+      icon: <FaPalette />,
+      skills: [
+        { name: "Figma", icon: <SiFigma />, color: "text-pink-500" },
+        { name: "Canva", icon: <SiCanva />, color: "text-blue-400" },
+        { name: "Blender 3D", icon: <SiBlender />, color: "text-orange-500" },
+      ],
+    },
+    {
+      category: "Programming & Frameworks",
+      icon: <FaCode />,
+      skills: [
+        { name: "JavaScript", icon: <SiJavascript />, color: "text-yellow-400" },
+        { name: "TypeScript", icon: <SiTypescript />, color: "text-blue-500" },
+        { name: "React JS", icon: <SiReact />, color: "text-cyan-400" },
+        { name: "Next JS", icon: <SiNextdotjs />, color: "text-white" },
+        { name: "Vue JS", icon: <SiVuedotjs />, color: "text-green-500" },
+        { name: "Tailwind", icon: <SiTailwindcss />, color: "text-sky-400" },
+        { name: "Bootstrap", icon: <SiBootstrap />, color: "text-purple-600" },
+      ],
+    },
+    {
+      category: "Backend & Database",
+      icon: <FaServer />,
+      skills: [
+        { name: "Node JS", icon: <DiNodejsSmall />, color: "text-green-600" },
+        { name: "PHP", icon: <SiPhp />, color: "text-indigo-400" },
+        { name: "Laravel", icon: <SiLaravel />, color: "text-red-500" },
+        { name: "Python", icon: <DiPython />, color: "text-blue-500" },
+        { name: "Java", icon: <DiJava />, color: "text-red-600" },
+        { name: "C++", icon: <SiCplusplus />, color: "text-blue-700" },
+        { name: "Go Lang", icon: <SiGo />, color: "text-cyan-500" },
+        { name: "MySQL", icon: <SiMysql />, color: "text-blue-400" },
+        { name: "PostgreSQL", icon: <SiPostgresql />, color: "text-blue-300" },
+        { name: "MongoDB", icon: <DiMongodb />, color: "text-green-500" },
+      ],
+    },
+    {
+      category: "Mobile & AI",
+      icon: <FaMobileAlt />,
+      skills: [
+        { name: "Flutter", icon: <SiFlutter />, color: "text-blue-400" },
+        { name: "Dart", icon: <SiDart />, color: "text-blue-500" },
+        { name: "OpenAI", icon: <SiOpenai />, color: "text-green-400" },
+      ],
+    },
+    {
+      category: "Tools & Others",
+      icon: <FaTools />,
+      skills: [
+        { name: "Git", icon: <DiGit />, color: "text-orange-600" },
+        { name: "Docker", icon: <DiDocker />, color: "text-blue-500" },
+        { name: "Firebase", icon: <SiFirebase />, color: "text-yellow-500" },
+        { name: "Postman", icon: <SiPostman />, color: "text-orange-500" },
+      ],
+    },
+  ];
+
   return (
-    <div className="skills" id="skills">
-      <div className="skills main-container">
-        <h3 className="pre-title">Learning Path</h3>
-        <h1 className="section-title">Skills & Expertise</h1>
+    <div className="py-20 px-6 md:px-16 bg-white" id="skills">
+      <div className="container mx-auto">
+        {/* Header Section */}
+        <div className="mb-16 text-center">
+          <h3 className="text-sm font-bold text-blue-600 uppercase tracking-widest mb-2">
+            Learning Path
+          </h3>
+          <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900">
+            Skills & Expertise
+          </h1>
+          <div className="w-20 h-1.5 bg-blue-600 mx-auto mt-4 rounded-full"></div>
+        </div>
 
-          <div className="skills-wrapper">
-          
-          {/* --- CATEGORY 1: DESIGN & UI/UX --- */}
-          <div className="skill-category-group">
-            <h4 className="category-label">
-              <FaPalette className="cat-icon" /> Design & UI/UX
-            </h4>
-            <div className="skills-list-grid">
-              <div className="skill-item-card"><div className="skill-icon-box figma"><SiFigma /></div><h4>Figma</h4></div>
-              <div className="skill-item-card"><div className="skill-icon-box canva"><SiCanva /></div><h4>Canva</h4></div>
-              <div className="skill-item-card"><div className="skill-icon-box blender"><SiBlender /></div><h4>Blender 3D</h4></div>
+        {/* Content Section */}
+        <div className="space-y-16">
+          {skillData.map((group, index) => (
+            <div key={index} className="space-y-3">
+              {/* Category Label */}
+              <div className="flex items-center gap-3 border-b border-gray-100">
+                <span className="text-2xl text-blue-600">{group.icon}</span>
+                <h2 className="text-2xl font-bold text-gray-800">{group.category}</h2>
+              </div>
+
+              {/* Skills Grid */}
+              <div className="flex flex-wrap gap-4">
+                {group.skills.map((skill, idx) => (
+                  <div 
+                    key={idx}
+                    className="flex items-center gap-3 px-5 py-3 bg-gray-900 rounded-full border border-gray-700 transition-all duration-300 hover:scale-105 hover:bg-gray-800 hover:border-blue-500 group cursor-default shadow-lg"
+                  >
+                    <span className={`text-2xl ${skill.color} transition-transform group-hover:rotate-12`}>
+                      {skill.icon}
+                    </span>
+                    <span className="text-white font-medium text-sm md:text-base whitespace-nowrap">
+                      {skill.name}
+                    </span>
+                  </div>
+                ))}
+              </div>
             </div>
-          </div>
-
-          {/* --- CATEGORY 2: PROGRAMMING & FRAMEWORKS --- */}
-                <div className="skill-category-group">
-                <h4 className="category-label">
-                  <FaCode className="cat-icon" /> Programming & Frameworks
-                </h4>
-                <div className="skills-list-grid">
-                  <div className="skill-item-card"><div className="skill-icon-box js"><SiJavascript /></div><h4>JavaScript</h4></div>
-                  <div className="skill-item-card"><div className="skill-icon-box ts"><SiTypescript /></div><h4>TypeScript</h4></div>
-                  <div className="skill-item-card"><div className="skill-icon-box java"><DiJava /></div><h4>Java</h4></div>
-                  <div className="skill-item-card"><div className="skill-icon-box php"><SiPhp /></div><h4>PHP</h4></div>
-                  <div className="skill-item-card"><div className="skill-icon-box python"><DiPython /></div><h4>Python</h4></div>
-                  <div className="skill-item-card"><div className="skill-icon-box cpp"><SiCplusplus /></div><h4>C++</h4></div>
-                  <div className="skill-item-card"><div className="skill-icon-box dart"><SiDart /></div><h4>Dart</h4></div>
-                  <div className="skill-item-card"><div className="skill-icon-box go"><SiGo /></div><h4>Go Lang</h4></div>
-                  
-                  <div className="skill-item-card"><div className="skill-icon-box react"><SiReact /></div><h4>React JS</h4></div>
-                  <div className="skill-item-card"><div className="skill-icon-box next"><SiNextdotjs /></div><h4>Next JS</h4></div>
-                  <div className="skill-item-card"><div className="skill-icon-box vue"><SiVuedotjs /></div><h4>Vue JS</h4></div>
-                  <div className="skill-item-card"><div className="skill-icon-box laravel"><SiLaravel /></div><h4>Laravel</h4></div>
-                  <div className="skill-item-card"><div className="skill-icon-box flutter"><SiFlutter /></div><h4>Flutter</h4></div>
-                  <div className="skill-item-card"><div className="skill-icon-box tailwind"><SiTailwindcss /></div><h4>Tailwind</h4></div>
-                  <div className="skill-item-card"><div className="skill-icon-box bootstrap"><SiBootstrap /></div><h4>Bootstrap</h4></div>
-                </div>
-                </div>
-
-                {/* --- CATEGORY 3: BACKEND, TOOLS & AI --- */}
-          <div className="skill-category-group">
-            <h4 className="category-label">
-              <FaServer className="cat-icon" /> Backend, Cloud & Tools
-            </h4>
-            <div className="skills-list-grid">
-              <div className="skill-item-card"><div className="skill-icon-box node"><DiNodejsSmall /></div><h4>Node JS</h4></div>
-              <div className="skill-item-card"><div className="skill-icon-box mysql"><SiMysql /></div><h4>MySQL</h4></div>
-              <div className="skill-item-card"><div className="skill-icon-box pg"><SiPostgresql /></div><h4>PostgreSQL</h4></div>
-              <div className="skill-item-card"><div className="skill-icon-box mongo"><DiMongodb /></div><h4>MongoDB</h4></div>
-              <div className="skill-item-card"><div className="skill-icon-box firebase"><SiFirebase /></div><h4>Firebase</h4></div>
-              <div className="skill-item-card"><div className="skill-icon-box docker"><DiDocker /></div><h4>Docker</h4></div>
-              <div className="skill-item-card"><div className="skill-icon-box git"><DiGit /></div><h4>Git & GitHub</h4></div>
-              <div className="skill-item-card"><div className="skill-icon-box postman"><SiPostman /></div><h4>Postman</h4></div>
-              <div className="skill-item-card"><div className="skill-icon-box openai"><SiOpenai /></div><h4>AI Integration</h4></div>
-            </div>
-          </div>
-
+          ))}
         </div>
       </div>
     </div>
   );
 };
 
-export default Skill; 
+export default Skill;
