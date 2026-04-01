@@ -72,14 +72,16 @@ const Skill = () => {
   ];
 
   return (
-    <div className="py-20 px-6 md:px-16 bg-white" id="skills">
-      <div className="container mx-auto">
+    
+    <div className="relative py-20 px-6 md:px-16 bg-linear-to-b from-cyan-800 via-cyan-950 to-cyan-950" id="skills">
+      
+      <div className="container mx-auto relative z-20">
         {/* Header Section */}
         <div className="mb-16 text-center">
           <h3 className="text-sm font-bold text-blue-600 uppercase tracking-widest mb-2">
             Learning Path
           </h3>
-          <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900">
+          <h1 className="text-4xl md:text-5xl font-extrabold text-gray-200">
             Skills & Expertise
           </h1>
           <div className="w-20 h-1.5 bg-blue-600 mx-auto mt-4 rounded-full"></div>
@@ -89,10 +91,13 @@ const Skill = () => {
         <div className="space-y-16">
           {skillData.map((group, index) => (
             <div key={index} className="space-y-3">
+              <div className="flex items-center gap-4 mb-6">
               {/* Category Label */}
-              <div className="flex items-center gap-3 border-b border-gray-100">
+              <div className="flex items-center gap-2 flex-srink-0">
                 <span className="text-2xl text-blue-600">{group.icon}</span>
-                <h2 className="text-2xl font-bold text-gray-800">{group.category}</h2>
+                <h2 className="text-2xl font-bold text-gray-200">{group.category}</h2>
+              </div>
+                <div className="flex-grow h-[1px] bg-gradient-to-r from-transparents via-white to-transparent"></div>
               </div>
 
               {/* Skills Grid */}
@@ -100,7 +105,7 @@ const Skill = () => {
                 {group.skills.map((skill, idx) => (
                   <div 
                     key={idx}
-                    className="flex items-center gap-3 px-5 py-3 bg-gray-900 rounded-full border border-gray-700 transition-all duration-300 hover:scale-105 hover:bg-gray-800 hover:border-blue-500 group cursor-default shadow-lg"
+                    className="flex items-center gap-3 px-5 py-3 bg-gray-900 rounded-full border border-gray-700 transition-all duration-300 hover:scale-105 hover:bg-slate-700 hover:border-blue-500 group cursor-default shadow-lg"
                   >
                     <span className={`text-2xl ${skill.color} transition-transform group-hover:rotate-12`}>
                       {skill.icon}

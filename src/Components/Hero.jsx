@@ -1,29 +1,57 @@
-import React from 'react'
+import React from "react";
 // import './Hero.css'
-import profile from '../assets/images/profile.jpg'
-import '../App.css'
-import { Element } from 'react-scroll'
+import profile from "../assets/images/profile.jpg";
+import "../App.css";
+import { Element } from "react-scroll";
 const Hero = () => {
   return (
-    <div className="py-16 px-16 bg-linear-to-tr from-slate-50 via-cyan-300 to-indigo-600" id="hero">
-      <div className="absolute bottom-0 left-0 w-full h-64 bg-linear-to-t from-white to-transparent pointer-events-none"></div>
-    <div className="container mx-auto flex flex-col md:flex-row items-center gap-12 " >
-      <div className="flex-1 space-y-6">
-        <h3 className="text-3xl font-bold text-gray-900 leading-tight" data-aos="fade-up" data-aos-delay="200" data-aos-animate="aos-init aos-animate">My name is</h3>
-        <h1 className="text-5xl font-bold text-slate-900" data-aos="fade-up" data-aos-delay="300" data-aos-animate="aos-init aos-animate">Bambang  <span className="text-blue-500">Sugiarto</span></h1>
-        <p className="text-lg text-slate-900" data-aos="fade-up" data-aos-delay="400" data-aos-animate="aos-init aos-animate">
-          Hi, I'm Bambang Sugiarto. I'm a developer.
-I like coding and building cool stuff.
-Take a look at my work.
-        </p>
-      </div>
+    <div
+      className="relative py-20 px-20 bg-gradient-to-b from-cyan-100 via-cyan-300 to-cyan-500"
+      id="hero"
+    >
+      <div className="container mt-20 mb-10 mx-auto z-10 items-center justify-center text-center gap-12 ">
+        <div
+          className="w-50 mx-auto border-4 border-white rounded-full shadow-xl overflow-hidden"
+          data-aos="fade-up"
+          data-aos-delay="200"
+          data-aos-animate="aos-init aos-animate"
+        >
+          <img
+            src={profile}
+            alt="Person Standing"
+            className="rounded-full shadow-xl w-full object-cover items-center justify-center mx-auto"
+          />
+        </div>
+        <div className="space-y-6">
+          <h3
+            className="text-2xl font-bold text-white leading-tight m-0"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-animate="aos-init aos-animate"
+          >
+            Hi, I'm Bambang Sugiarto
+          </h3>
+          <h1
+            className="text-5xl font-bold text-white"
+            data-aos="fade-up"
+            data-aos-delay="300"
+            data-aos-animate="aos-init aos-animate"
+          >
+            Newbie <span className="text-blue-500">Developer</span>
+          </h1>
+          <p
+            className="text-lg italic text-white "
+            data-aos="fade-up"
+            data-aos-delay="400"
+            data-aos-animate="aos-init aos-animate"
+          >
+           "The limit only exists if you stop moving. As long as you keep moving, the limit will continue to move away." ~ Luo Feng
 
-      <div className="flex-1 w-full " data-aos="fade-up" data-aos-delay="200" data-aos-animate="aos-init aos-animate">
-        <img src={profile} alt="Person Standing" className="rounded-full shadow-xl w-full object-cover"/>
+          </p>
+        </div>
       </div>
     </div>
-  </div>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;
