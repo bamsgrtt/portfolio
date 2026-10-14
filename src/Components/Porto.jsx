@@ -6,14 +6,13 @@ import Port3 from '../assets/images/port3.avif'
 import '../App.css'
 const Porto = () => {
   return (
-    <div className='portfolios'>
+    <section className='section-wrap projects reveal' id="projects">
       <div className="main-container">
-        <h3 className="pre-title" data-aos="fade-up" data-aos-delay="200" data-aos-animate="aos-init aos-animate">My Works</h3>
-        <h1 className="section-title" data-aos="fade-up" data-aos-delay="300" data-aos-animate="aos-init aos-animate">Featured Portfolios</h1>
+        <p className="eyebrow">02 / selected experiments</p><h1 className="projects-title">Things I’ve<br/><em>been building.</em></h1>
 
-        <div className="grid-3" data-aos="fate-up">
+        <div className="project-grid">
           
-          <div className="portfolio" data-aos="fade-up" data-aos-delay="400" data-aos-animate="aos-init aos-animate">
+          <div className="portfolio project-card">
             <div className="portfolio-cover">
               <img src={Port1} alt="Portfolio 1"/>
             </div>
@@ -41,7 +40,7 @@ const Porto = () => {
           </div>
 
           
-          <div className="portfolio" data-aos="fade-down" data-aos-delay="600" data-aos-animate="aos-init aos-animate">
+          <div className="portfolio project-card">
             <div className="portfolio-cover">
               <img src={Port2} alt="Portfolio 2"/>
             </div>
@@ -68,7 +67,7 @@ const Porto = () => {
             </div>
           </div>
          
-          <div className="portfolio" data-aos="fade-up" data-aos-delay="800" data-aos-animate="aos-init aos-animate">
+          <div className="portfolio project-card">
             <div className="portfolio-cover">
               <img src={Port3} alt="Portfolio 3"/>
             </div>
@@ -96,7 +95,7 @@ const Porto = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

@@ -1,4 +1,6 @@
 import React from "react";
+import { useEffect, useRef } from "react";
+import { Chart, RadarController, RadialLinearScale, PointElement, LineElement, Filler, Tooltip } from "chart.js";
 import { 
   DiJava, DiNodejsSmall, DiMongodb, DiGit, DiPython, DiDocker 
 } from "react-icons/di";
@@ -10,6 +12,16 @@ import {
 import { FaPalette, FaCode, FaServer, FaTools, FaMobileAlt } from "react-icons/fa";
 
 const Skill = () => {
+  const chartRef = useRef(null);
+  useEffect(() => {
+    Chart.register(RadarController, RadialLinearScale, PointElement, LineElement, Filler, Tooltip);
+    const chart = new Chart(chartRef.current, {
+      type: "radar",
+      data: { labels: ["Frontend", "Backend", "Databases", "Design", "Dev tools", "Learning"], datasets: [{ data: [78, 68, 62, 56, 72, 92], backgroundColor: "rgba(216,243,106,.16)", borderColor: "#d8f36a", pointBackgroundColor: "#d8f36a", pointBorderColor: "#10110f", pointRadius: 4, borderWidth: 2 }] },
+      options: { responsive: true, maintainAspectRatio: false, scales: { r: { min: 0, max: 100, ticks: { display: false, stepSize: 20 }, grid: { color: "rgba(255,255,255,.12)" }, angleLines: { color: "rgba(255,255,255,.12)" }, pointLabels: { color: "#aeb1a6", font: { family: "DM Mono", size: 11 } } } }, plugins: { legend: { display: false }, tooltip: { backgroundColor: "#d8f36a", titleColor: "#10110f", bodyColor: "#10110f", displayColors: false } } }
+    });
+    return () => chart.destroy();
+  }, []);
   // Data Skill dikelompokkan berdasarkan kategori
   const skillData = [
     {
@@ -73,22 +85,23 @@ const Skill = () => {
 
   return (
     
-    <div className="relative py-20 px-6 md:px-16 bg-linear-to-b from-cyan-800 via-cyan-950 to-cyan-950" id="skills">
+    <div className="section-wrap section-dark reveal" id="skills">
       
       <div className="container mx-auto relative z-20">
         {/* Header Section */}
-        <div className="mb-16 text-center">
+        <div className="section-heading">
           <h3 className="text-sm font-bold text-blue-600 uppercase tracking-widest mb-2">
             Learning Path
           </h3>
-          <h1 className="text-4xl md:text-5xl font-extrabold text-gray-200">
+          <h1 className="section-chart-title">
             Skills & Expertise
           </h1>
-          <div className="w-20 h-1.5 bg-blue-600 mx-auto mt-4 rounded-full"></div>
         </div>
 
+        <div className="skill-dashboard"><div className="chart-panel"><div className="eyebrow">A living snapshot</div><div className="chart-wrap"><canvas ref={chartRef}></canvas></div></div>
+
         {/* Content Section */}
-        <div className="space-y-16">
+        <div className="space-y-16 skill-cloud">
           {skillData.map((group, index) => (
             <div key={index} className="space-y-3">
               <div className="flex items-center gap-4 mb-6">
@@ -118,7 +131,7 @@ const Skill = () => {
               </div>
             </div>
           ))}
-        </div>
+        </div></div>
       </div>
     </div>
   );
