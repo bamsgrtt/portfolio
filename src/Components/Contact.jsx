@@ -60,7 +60,7 @@ const Contact = () => {
     <section className="section-wrap contact-section reveal" id="contact">
       <div className="container mx-auto">
           <div className="contact-heading"><p className="eyebrow">
-            Contact
+            04 / Contact
           </p><h1>Have a good idea?<br/><em>Let’s talk.</em></h1>
         </div>
 

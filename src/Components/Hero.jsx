@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <section className="hero section-wrap" id="hero"><div className="hero-grid"><div className="hero-content">
           <p className="hero-kicker eyebrow">Independent developer <span>•</span> Indonesia / 2025</p>
-          <h1 className="hero-title">Building digital<br/><em>things that matter.</em></h1>
+          <h1 className="hero-title">Hi, I&apos;m Bambang.<br/><em>I build with curiosity.</em></h1>
           <p className="hero-copy">Hi, I’m Bambang Sugiarto. I turn curious ideas into thoughtful interfaces and dependable software, one deliberate iteration at a time.</p>
           <div className="hero-actions"><a href="#contact" className="button button-primary">Let’s work together <span>↗</span></a><a href="#services" className="text-link">Explore my practice <span>↓</span></a></div>
           <div className="hero-stats"><div><strong>03+</strong><span>years learning</span></div><div><strong>24</strong><span>technologies</span></div><div><strong>∞</strong><span>curiosity</span></div></div>

@@ -90,8 +90,8 @@ const Skill = () => {
       <div className="container mx-auto relative z-20">
         {/* Header Section */}
         <div className="section-heading">
-          <h3 className="text-sm font-bold text-blue-600 uppercase tracking-widest mb-2">
-            Learning Path
+          <h3 className="eyebrow">
+            03 / Learning Path
           </h3>
           <h1 className="section-chart-title">
             Skills & Expertise
